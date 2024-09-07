@@ -1,0 +1,1 @@
+$('a[href^="#"]').click(function(e){var t=$(this).attr("href"),t=$(t).offset().top;$("html, body").animate({scrollTop:t},500),e.preventDefault()});var offset=$("nav").offset().top;$(window).scroll(function(){$(this).scrollTop()>=offset?($("nav").addClass("isFixed"),$("html").addClass("whiteSpace")):($("nav").removeClass("isFixed"),$("html").removeClass("whiteSpace"))});
